@@ -37,6 +37,7 @@ Note : Before doing any modifications in the PCB make sure that the stock microc
 * **To connect the promicro to PCB - Micro USB to the USB C, i made use of an old micro usb cable lying around, cut the cable to approprite length and exposed the wires, connected the male connector to female port of  pro micro, Connected the Vcc and Gnd wires to Vcc and Gnd in the PCB, In PCB there's a differential pair (D+, D-) running from USB C port in the PCB to microcontroller in the PCB, in between the connection there's a resistor and filter capacitors, after removing both (bypassing the connection) i connected the D+ and D- wires to the bypassed point respectively (make sure the cable wires are also impedance matched)
 
 #### RGB Lighting:
+![Keyboard image](https://github.com/abhijithabhiakl/Redragon_K617-QMK_port/blob/master/qmkkb.png)
 
 The stock RGB Lighting used on the keyboard is [this](https://www.luckylight.cn/en/products/smd-led/multi-color-smd-led/?series_code=sr187-rgb-series) `SR187RGBC` `Multi-color PLCC SMD LEDs`, to use this kind of LED with qmk I either have to write a custom led matrix code ( I don't know for sure if qmk already have any support this neither currently have the knowledge or time to do so ) or need to make a led matrix with qmk supported led matrix drivers, due to above mentioned reasons I haven't did any RGB lightings in the keyboard except a single ws2812 led 
 
